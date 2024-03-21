@@ -1,0 +1,30 @@
+1. CPU
+- 레지스터
+- 캐시
+
+2. GPU
+- 캐시
+- 메모리
+
+3. 메모리 영역
+# https://t1.daumcdn.net/cfile/tistory/18233E474D6B204429
+# https://t1.daumcdn.net/cfile/tistory/255AC73E55CB1DB21D
+# https://st-lab.tistory.com/198
+- Code (Text): 기계어 코드 (Read-only)
+- Data: 전역 변수 및 정적 심볼
+    - .rodata: 상수(const) + 숫자/문자열 리터럴 ("abcde", 123, ...)
+    - .data: (Initialized) 일반 전역 변수 및 정적 전역 변수(static), 외부 변수(extern)
+    - BSS: (Uninitialized) 일반 전역 변수 및 정적 전역 변수(static), 외부 변수(extern)
+- Heap: 동적 메모리 할당 (프로그래머에 의해 할당)
+- Stack: 호출된 함수가 점유하는 메모리 공간 -> 즉 매개변수 또는 지역 변수가 점유하는 메모리 공간 (컴파일러에 의해 할당)
+
+** BSS: Block Started Symbol
+** Low Adress (Code) >>> High Address (Stack)
+
+4. 디스크 영역
+
+5. 변수
+- 전역 변수
+- 지역 변수
+- 정적 변수 (static)
+- 외부 변수 (extern)
